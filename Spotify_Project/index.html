@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Spotify Clone</h1>
+      </header>
+
+      <div class="player">
+        <img
+          src="assets/images/album-cover.jpg"
+          alt="Album Cover"
+          class="album-cover"
+        />
+
+        <div class="song-info">
+          <h2 class="song-title">Royalty</h2>
+          <p class="artist-name">NCS</p>
+        </div>
+
+        <audio id="audio-player" src="assets/music/sample-song.mp3"></audio>
+
+        <div class="controls">
+          <button id="play-pause">Play</button>
+          <input type="range" id="seek-bar" value="0" min="0" max="100" />
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
